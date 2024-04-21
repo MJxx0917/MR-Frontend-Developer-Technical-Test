@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clothing Store</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1></h1>
+        <button id="cartToggle">My Cart (<span id="itemCount">0</span> items)</button>
+        <div class="mini-cart" id="miniCart">
+            <div id="cartItems"></div>
+        </div>
+    </header>
+    <main class="product-display">
+        <div class="product-details">
+            <div class="product-image">
+                <img src="#" alt="Classic Tee">
+            </div>
+            
+            <h2 id="title"></h2>
+            <p id="price"></p>
+            <p id="description"></p> 
+            <p>Size *</p>
+            <div id="sizes"></div>
+            <button id="addToCart">Add to Cart</button>
+            <div id="error-message"></div>
+        </div>        
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

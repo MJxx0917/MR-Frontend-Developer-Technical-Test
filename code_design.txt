@@ -1,0 +1,78 @@
+clothing_site.html:
+Structure:
+
+Root Container:
+Class: container
+Purpose: Center content and set maximum width for readability and layout control.
+Header:
+Elements: h1, button for cart toggling, div for the mini-cart.
+ID: cartToggle for the button, miniCart for the mini-cart div.
+Purpose: Display site title, provide access to the cart, and initially hide the mini-cart.
+Main Content Area:
+Class: product-display
+Subsections: product-image, product-details
+Content:
+Product image with placeholder for dynamic content.
+Product title, price, and description placeholders to be filled via API.
+Dynamic size selector (div with ID sizes).
+Add to Cart button with ID addToCart.
+Error message display area with ID error-message.
+External Resources:
+Link to CSS file.
+Link to JavaScript file.
+Responsibilities:
+
+Layout foundation and basic interactivity.
+External script and stylesheet linking.
+Initial setup of dynamic content placeholders.
+
+
+script.js
+Functional Elements:
+
+Initial Setup:
+Event listener for DOM content loaded.
+Fetch product data from API.
+Interactivity:
+Cart toggle functionality.
+Size selection and validation before adding to cart.
+Error handling for incomplete actions (e.g., size not selected).
+Dynamic Content Handling:
+Populate product details from API data.
+Update mini-cart dynamically based on user actions.
+Utility Functions:
+Fetch data from the product API.
+Update cart and UI components based on cart state.
+Setup product sizes dynamically based on API data.
+Responsibilities:
+
+Ensure functionality matches design specifications.
+Handle user interactions and update the DOM accordingly.
+Communicate with external APIs and process data.
+
+styles.css
+Layout Control:
+
+Base Styles:
+Target: body, html
+Set default font, margin, padding, text color, and background.
+Container:
+Responsive width control for different device sizes.
+Central alignment of content.
+Header:
+Styling for background color, text color, and layout (flexbox).
+Positioning for cart toggle and mini-cart.
+Product Display:
+Flexbox setup for responsive layout between image and details.
+Specific styles for image responsiveness and detail presentation.
+Interactive Elements:
+Button styles for size selection and purchasing actions.
+Hover effects for interactive feedback.
+Transition effects for smooth visual transitions.
+Responsive Adjustments:
+Media queries for different screen sizes to adjust layout and interactive elements' sizing.
+Responsibilities:
+
+Visual aesthetics and layout.
+Responsiveness across devices.
+Interactive feedback enhancement.
